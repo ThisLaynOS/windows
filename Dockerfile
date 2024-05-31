@@ -1,6 +1,6 @@
 FROM scratch
 COPY --from=qemux/qemu-docker:5.09 / /
-
+USER root
 ARG VERSION_ARG="0.0"
 ARG DEBCONF_NOWARNINGS="yes"
 ARG DEBIAN_FRONTEND="noninteractive"
